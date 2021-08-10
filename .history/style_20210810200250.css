@@ -69,15 +69,12 @@ body {
   height: 400px;
 }
 
-.carrot,
-.bug {
+.carrot {
   position: absolute;
-  transition: transform 300ms ease-in;
 }
 
-.carrot:hover,
-.bug:hover {
-  transform: scale(1.1);
+.bug {
+  position: absolute;
 }
 
 .popup {

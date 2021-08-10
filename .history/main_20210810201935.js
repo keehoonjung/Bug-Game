@@ -1,5 +1,6 @@
 "use strict";
 
+// 1. 플레이 버튼 누르면 벌래랑 당근 만들기.
 const playBtn = document.querySelector(".play__btn");
 const stopBtn = document.querySelector(".stop__btn");
 const gameScore = document.querySelector(".count");
@@ -24,8 +25,6 @@ const CARROT_SIZE = 80;
 let score;
 let timeInterver;
 let started = false;
-
-// 1. 플레이 버튼 누르면 벌래랑 당근 만들기.
 
 playBtn.addEventListener("click", () => {
   if (started) {
@@ -153,7 +152,7 @@ function timeCount() {
   timer(remaingTime);
   timeInterver = setInterval(() => {
     if (remaingTime <= 0) {
-      stopGame("loose");
+      visiblePopup("loose");
       return;
     }
     timer(--remaingTime);

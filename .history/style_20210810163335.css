@@ -26,17 +26,19 @@ body {
   font-size: 35px;
   border: 5px solid black;
   border-radius: 12px;
-  padding-left: 6px;
+  padding-left: 12px;
   margin-bottom: 8px;
-  transition: transform 300ms ease-in;
 }
 
-.play__btn:hover {
-  transform: scale(1.1);
-}
-
-.stop__btn.visible {
-  display: inline-block;
+.stop__btn {
+  width: 70px;
+  height: 70px;
+  background-color: blanchedalmond;
+  font-size: 35px;
+  border: 5px solid black;
+  border-radius: 12px;
+  padding-left: 12px;
+  margin-bottom: 8px;
 }
 
 .timer {
@@ -48,7 +50,6 @@ body {
   font-size: 35px;
   background-color: white;
   margin-bottom: 8px;
-  visibility: hidden;
 }
 
 .count {
@@ -61,7 +62,6 @@ body {
   font-size: 35px;
   padding: 9px 0;
   color: white;
-  visibility: hidden;
 }
 
 .playground {
@@ -69,15 +69,12 @@ body {
   height: 400px;
 }
 
-.carrot,
-.bug {
+.carrot {
   position: absolute;
-  transition: transform 300ms ease-in;
 }
 
-.carrot:hover,
-.bug:hover {
-  transform: scale(1.1);
+.bug {
+  position: absolute;
 }
 
 .popup {
