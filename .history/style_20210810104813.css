@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  background: center/ cover no-repeat url(/img/background.png);
+  height: 1200px;
+  text-align: center;
+}
+
+.header {
+  height: 600px;
+  padding-top: 50px;
+}

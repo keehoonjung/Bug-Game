@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+}
+.container {
+  background: center/ cover no-repeat url(/img/background.png);
+  height: 1200px;
+  text-align: center;
+}
+
+.header {
+  height: 600px;
+  padding-top: 50px;
+}
+
+.play__btn {
+  width: 80px;
+  height: 80px;
+  background-color: blanchedalmond;
+  font-size: 40px;
+  border: 5px solid black;
+  border-radius: 12px;
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+.timer {
+  margin: auto;
+  width: 170px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 8px;
+  font-size: 35px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+
+.count {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: tomato;
+  border: 4px solid black;
+  border-radius: 50%;
+  font-size: 35px;
+  padding: 11px 0;
+  color: white;
+}
+
+.playground {
+  height: 600px;
+  width: 100%;
+}
+
+.popup {
+  background-color: black;
+}

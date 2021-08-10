@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  background-color: blanchedalmond;
+  font-size: 40px;
+  border: 5px solid black;
+}
+.container {
+  background: center/ cover no-repeat url(/img/background.png);
+  height: 1200px;
+  text-align: center;
+}
+
+.header {
+  height: 600px;
+  padding-top: 50px;
+}
+
+.play__btn {
+}
