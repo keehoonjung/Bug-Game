@@ -82,10 +82,10 @@ function setItem(event) {
     if (target.classList == "carrot") {
       target.remove();
       countCarrot();
-      sound.playCarrotSound();
+      playSound(carrotSound);
     } else if (target.classList == "bug") {
       stopGame("loose");
-      sound.playBugSound();
+      playSound(bugSound);
     }
   }
 }

@@ -35,7 +35,7 @@ function stopGame(text) {
   if (text == "win") {
     sound.playWinSound();
   } else {
-    sound.playAlertSound();
+    sound.playAlertSound;
   }
   started = false;
   hideStopButton();
@@ -51,7 +51,7 @@ function startGame() {
   showScoreAndTimer();
   countCarrot();
   timeCount();
-  sound.playBackgroundSound();
+  playSound(backgroundAudio);
   GameField.init();
 }
 
@@ -82,10 +82,10 @@ function setItem(event) {
     if (target.classList == "carrot") {
       target.remove();
       countCarrot();
-      sound.playCarrotSound();
+      playSound(carrotSound);
     } else if (target.classList == "bug") {
       stopGame("loose");
-      sound.playBugSound();
+      playSound(bugSound);
     }
   }
 }
