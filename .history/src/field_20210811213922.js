@@ -28,13 +28,13 @@ export default class Field {
 
   onClick = (event) => {
     const target = event.target;
-    if (target.classList == ItemType.carrot) {
+    if (target.classList == "carrot") {
       target.remove();
       sound.playCarrotSound();
-      this.onClickItem && this.onClickItem(ItemType.carrot);
-    } else if (target.classList == ItemType.bug) {
+      this.onClickItem && this.onClickItem("carrot");
+    } else if (target.classList == "bug") {
       sound.playBugSound();
-      this.onClickItem && this.onClickItem(ItemType.bug);
+      this.onClickItem && this.onClickItem("bug");
     }
   };
   createItem(name, count) {

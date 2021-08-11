@@ -8,16 +8,12 @@ const BUG_COUNT = 6;
 const GAME_TIME = 10;
 
 const finishGameBanner = new PopUp();
-const game = new GameBuilder()
-  .withgameDuration(10)
-  .withCarrotCount(10)
-  .withBugCount(5)
-  .build();
+const Game
 
 finishGameBanner.setClickBtn(() => {
-  game.start();
+  Game.start();
 });
 
-game.setOnGameStop((text) => {
+Game.setOnGameStop((text) => {
   finishGameBanner.visible(text);
 });

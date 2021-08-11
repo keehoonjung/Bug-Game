@@ -15,9 +15,9 @@ const game = new GameBuilder()
   .build();
 
 finishGameBanner.setClickBtn(() => {
-  game.start();
+  Game.start();
 });
 
-game.setOnGameStop((text) => {
+Game.setOnGameStop((text) => {
   finishGameBanner.visible(text);
 });

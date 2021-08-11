@@ -27,7 +27,7 @@ export default class PopUp {
     } else if (result == Reason.lose) {
       this.popupMessage.textContent = " YOU LOOSE";
       this.popup.classList.add("visible");
-    } else if (result == Reason.retry) {
+    } else if (result == "retry") {
       this.popupMessage.textContent = " RETRY?";
       this.popup.classList.add("visible");
     }

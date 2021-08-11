@@ -9,7 +9,7 @@ const GAME_TIME = 10;
 
 const finishGameBanner = new PopUp();
 const game = new GameBuilder()
-  .withgameDuration(10)
+  .withgameDuration(5)
   .withCarrotCount(10)
   .withBugCount(5)
   .build();

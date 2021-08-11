@@ -1,6 +1,6 @@
 "use strict";
 
-import { Reason } from "./game.js";
+import Reason from "./game.js";
 export default class PopUp {
   constructor() {
     this.popup = document.querySelector(".popup");
@@ -24,10 +24,10 @@ export default class PopUp {
     if (result == Reason.win) {
       this.popupMessage.textContent = " YOU WIN";
       this.popup.classList.add("visible");
-    } else if (result == Reason.lose) {
+    } else if (result == "loose") {
       this.popupMessage.textContent = " YOU LOOSE";
       this.popup.classList.add("visible");
-    } else if (result == Reason.retry) {
+    } else if (result == "retry") {
       this.popupMessage.textContent = " RETRY?";
       this.popup.classList.add("visible");
     }

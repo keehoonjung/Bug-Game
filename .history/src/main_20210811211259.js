@@ -18,6 +18,6 @@ finishGameBanner.setClickBtn(() => {
   game.start();
 });
 
-game.setOnGameStop((text) => {
+Game.setOnGameStop((text) => {
   finishGameBanner.visible(text);
 });

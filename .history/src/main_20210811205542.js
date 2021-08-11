@@ -1,6 +1,6 @@
 "use strict";
 
-import GameBuilder from "./game.js";
+import GamePlay from "./game.js";
 import PopUp from "./popup.js";
 
 const CARROT_COUNT = 10;
@@ -8,16 +8,12 @@ const BUG_COUNT = 6;
 const GAME_TIME = 10;
 
 const finishGameBanner = new PopUp();
-const game = new GameBuilder()
-  .withgameDuration(10)
-  .withCarrotCount(10)
-  .withBugCount(5)
-  .build();
+const Game = new GamePlay(GAME_TIME, CARROT_COUNT, BUG_COUNT);
 
 finishGameBanner.setClickBtn(() => {
-  game.start();
+  Game.start();
 });
 
-game.setOnGameStop((text) => {
+Game.setonGameStop((text) => {
   finishGameBanner.visible(text);
 });
